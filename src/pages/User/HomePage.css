@@ -1,0 +1,306 @@
+.h3 {
+  text-align: center;
+}
+
+.sidepanel {
+  /* height: 250px;  */
+  height: 100%;
+  /* Specify a height */
+
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  left: 0;
+  background-color: #f1f1f1;
+  /* Black*/
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #111;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+  color: #818181;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  /* background-color: #111; */
+  color: #111;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+.homeSlide h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin: 50px 0 20px 0;
+}
+
+.homeSlide p {
+  margin: 20px 0;
+}
+
+.homeSlide ul {
+  position: absolute;
+  bottom: 20px;
+}
+
+.homeSlide ul li {
+  border: 2px solid #b8b7b7;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.homeSlide ul li button {
+  background: transparent !important;
+  color: transparent !important;
+}
+
+.homeSlide ul li button::before {
+  font-size: 15px !important;
+  color: #0f3460;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  margin: auto;
+}
+
+
+.main-body {
+  display: flex;
+  padding: 10px;
+}
+
+/* .carousel-slide {
+  padding-left: 8px;
+}
+
+.carousel-slide .carousel-inner .carousel-item {
+  height: 400px;
+
+} */
+
+/* for the categories section */
+.categories-section .list-group {
+  width: 250px;
+  /* Set the width of the list group */
+  background-color: #f0f0f0;
+  /* Set a background color */
+  /* padding: 20px; */
+}
+
+.categories-section .list-group a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  /* Add a border between list items */
+}
+
+.categories-section .list-group a:hover {
+  background-color: #ddd;
+  /* Set background color on hover */
+}
+
+
+.categories-section .list-group a.active {
+  background-color: #007bff;
+  /* Set background color for the active item */
+  color: #fff;
+}
+
+.categories-section .list-group a.disabled {
+  color: #6c757d;
+  /* Set color for the disabled item */
+}
+
+.categories-section .content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* End of categories section */
+
+
+
+
+
+/* 
+.card-with-background {
+  width: 18rem;
+  color: white;
+}
+
+.card-with-background .card-body {
+  background-image: url("../../assets/images/woodCarving.jpg");
+  background-size: cover;
+}
+
+.card-with-background .btn-white {
+  background-color: white;
+} */
+
+.card-with-background .card-title,
+.card-with-background .card-text,
+.card-with-background .btn {
+  color: black;
+}
+
+/* .card-categories {
+  display: flex;
+} */
+
+/* this is for horizontal list */
+.list-group ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+}
+
+.list-group li {
+  width: 500px;
+  height: 120px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  /* Add a border for better visibility */
+  box-sizing: border-box;
+  /* Include border in width and height */
+}
+
+.list-group li a {
+  color: black;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-direction: column;
+  color: #333;
+  height: 100%;
+}
+
+.list-group li a img {
+  width: 100%;
+  max-height: 80px;
+  /* Set a maximum height for the image */
+  object-fit: contain;
+}
+
+.list-group li a:hover {
+  background-color: gray;
+}
+
+.list-group div {
+  flex-direction: column;
+  width: calc(100% - 10px);
+  /* Take up full width with margin included */
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30%;
+  padding: 5px;
+}
+
+.list-group h6 {
+  font-size: 14px;
+  margin: 0;
+}
+
+.list-group p {
+  margin: 0;
+  font-size: 8px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* end horizontal list */
+
+.product-list {
+  max-width: 300px;
+  max-height: 600px;
+}
+
+.card {
+  margin-right: 10px;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 12rem;
+
+  height: 14rem;
+  margin-bottom: 8px;
+  padding: 5px;
+}
+
+.card:hover {
+  background-color: #ddd;
+}
+
+
+.card-img-top {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center;
+  padding: 0px
+}
+
+.card-title {
+  font-size: 14px;
+  margin: 6px 0;
+}
+
+.card-price-range {
+  font-size: 10px;
+  font-weight: bold;
+  color: #777;
+}
